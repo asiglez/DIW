@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ejercicio1.css">
+        <title>Blog de Tecnología</title>
+    </head>
+    <body>
+        <header>
+            <h1>Blog de Tecnología</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="menu-navegacion">Inicio</a></li>
+                    <li><a href="#" class="menu-navegacion">Articulos</a></li>
+                    <li><a href="#" class="menu-navegacion">Tutoriales</a></li>
+                    <li><a href="#" class="menu-navegacion">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="articulos">
+                <article>
+                    <h2>Guía de CSS</h2>
+                    <p>Una guía rápida para aprender CSS.</p>
+                    <p>En este artículo, te mostramos cómo comenzar a diseñar sitios web usando CSS</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </article>
+                <article>
+                    <h2>Introducción a JavaScript</h2>
+                    <p>Conceptos básicos sobre JavaScript.</p>
+                    <p>JavaScript es el lenguaje de prohramación de la web. Aprende cómo funciona.</p>
+                    <ul>
+                        <a href="#">Variables</a>
+                        <a href="#">Funciones</a>
+                        <a href="#">Eventos</a>
+                    </ul>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </article>
+                <article>
+                    <h2>Cómo usar HTML5</h2>
+                    <p>Domina las nuevas etiquetas de HTML5.</p>
+                    <p>En este artículo aprenderás sobre las nuevas capacidades que ofrece HTML5.</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </article>
+            </section>
+            <aside class="barra-lateral">
+                <h3>Últimos comentarios</h3>
+                <ul>
+                    <li><strong>Juan:</strong> Excelente artículo de JavaScript.</li>
+                    <li><strong>Ana:</strong> Muy útil la guía de CSS.</li>
+                    <li><strong>Carlos:</strong> HTML5 está revolucionando el desarrollo web.</li>
+                </ul>
+            </aside>
+            <section class="formulario-contacto">
+                <h2>Formulario de Contacto</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@dominio.com" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                    
+                    <fieldset>
+                        <legend>Preferencias de contacto</legend>
+                        <label for="preferencia-email">
+                        <input type="radio" id="preferencia-contacto" name="preferencia" value="email">Correo electronico</label>
+
+                        <label for="preferencia-telefono">
+                        <input type="radio" id="preferencia-telefono" name="preferencia" value="telefono">Teléfono</label>
+                    </fieldset>
+
+                    <label for="newsletter"></label>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>Suscribirse a la newsletter
+
+                    <input type="submit" name="enviar">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Blog de Tecnología</p>
+            <p><a href="mailto:info@blogdetecnologia.com">Contacto</a></p>
+        </footer>
+    </body>
+</html>

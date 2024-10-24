@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(208, 255, 0);
+}
+/*Estiliza todas las etiquetas h1 para que tengan una tipografía Arial, tamaño 36px y color #333333*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #333333;
+}
+
+/*Aplica a las etiquetas h2 una tipografía Verdana, tamaño 24px y color #1ª5eab*/
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color: #1a5eab;
+}
+
+/*Diseña los párrafos p con una tipografía Times New Roman, tamaño 14px y color #444444*/
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #444444;
+}
+
+/*Utiliza el selector de clase .categories para dar un margen superior e inferior de 20px a la lista de categorías*/
+.categories{
+    margin: 20px 0;
+}
+
+/*Usa el selector de ID #main-header para añadir un color de fondo #f8f8f8 al encabezado principal*/
+#main-header{
+    background-color: #f8f8f8;
+}
+
+/*Con selectores descendientes, aplica un margen de 15px y un borde inferior de 1px sólido #dddddd a los header dentro de article*/
+article header{
+    margin: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+/*Implementa selectores de hijo directo para solo las section de article tengan un padding de 20px*/
+section > article{
+    padding: 20px;
+}
+/*Estiliza los enlaces dentro de .categories para que cambien a color #ff0000 cuando se pasa el ratón sobre ellos*/
+.categories a:hover{
+    background-color: #ff0000;
+}
+/*Cambia las filas impares de la tabla con un color de fondo #f2f2f2.*/
+table tr:nth-child(odd){
+background-color: #f2f2f2;
+}
+
+/*Utiliza frst-letter para aumentar el tamaño y cambiar el color de la primera letra de cada párrafo a 22px y #1a5eab respectivamente*/
+p::first-letter{
+    font-size: 22px;
+    color: #1a5eab;
+}
+
+/*Implementa ::before para añadir un guion antes del título de cada artículo.*/
+article > header h2::before{
+    content: "-";
+}
+
+/*l*/
