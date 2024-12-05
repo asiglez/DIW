@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+header {
+    height: 115px;
+}
+
+header #logo {
+    background-color: #00b809;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+header #logo h1 {
+    margin-left: 30px;
+    font-size: large;
+}
+
+#logo img {
+    position: relative;
+    height: 75px;
+}
+
+nav ul {
+    background-color: grey;
+    height: 40px;
+    list-style-type: none;
+    margin-right: 0px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    padding: 5px;
+}
+
+nav ul li:hover {
+    outline-style: solid;
+    outline-width: 1px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    font-size: small;
+}
+
+#primera img {
+    position: relative;
+    width: 100%;
+}
+
+#primera {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#primera article {
+    position: relative;
+    margin-left: 40px;
+    width: 46%;
+    margin-top: 30px;
+}
+
+#primera article h2 {
+    position: relative;
+    left: 44%;
+    font-size: medium;
+}
+
+#primera article button {
+    position: relative;
+    left: 46%;
+}
+
+#segunda img {
+    position: relative;
+    width: 100%;
+}
+
+#segunda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#segunda article {
+    position: relative;
+    margin-left: 40px;
+    width: 21%;
+    margin-top: 50px;
+}
+
+#segunda article h2 {
+    position: relative;
+    font-size: medium;
+    left: 41%;
+}
+
+#tercera {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#tercera article {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+#tercera article h2 {
+    position: relative;
+    font-size: medium;
+}
+
+#tercera article p {
+    text-align: justify;
+}
+
+#enlaces {
+    position: relative;
+    background-color: grey;
+    padding: 20px;
+}
+
+#enlaces nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-portada{
+    background-image: url("DIW_U03_IN_A01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 75px;
+}
