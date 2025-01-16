@@ -1,0 +1,20 @@
+.contenedor {
+    border: 10px solid rgba(187, 186, 186, 0.623);
+    border-top: 10px solid blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes contenedor {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,26 +1,12 @@
-#cajapadre{
-    display: flex;
-    width: 600px;
-    height: 200px;
-    border: 1px solid black;
-    flex-wrap: wrap;
-    align-content: flex-start;
+.animacion_parpadeo{
+    animation-name: texto_parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
 }
 
-#cajapadre > div{
-    height: 145px;
-    margin: 5px;
-    background-color: #CCCCCC;
-}
-#caja1{
-    flex: 1 1 100px;
-}
-#caja2{
-    flex: 1 1 100px;
-}
-#caja3{
-    flex: 1 1 100px;
-}
-#caja4{
-    flex: 1 1 400px;
+@keyframes texto_parpadeo{
+    0%{opacity: 1.0;}
+    50%{opacity: 0.0; color:orange}
+    100%{opacity: 1.0;}
 }
