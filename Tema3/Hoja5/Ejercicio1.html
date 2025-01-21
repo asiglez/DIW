@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial del Parque de la Naturaleza, con información sobre sus animales, actividades y ubicación.">
+    <title>Parque de la Naturaleza</title>
+    <link rel="stylesheet" href="Ejercicio1.css">
+</head>
+<body>
+    <header>
+        <h1 class="typing-effect">Parque de la Naturaleza</h1>
+        <nav>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección del cielo con nubes animadas -->
+    <div class="cielo">
+        <img src="nube.png" alt="Nube" class="nube nube1">
+        <img src="nube.png" alt="Nube" class="nube nube2">
+    </div>
+
+    <main>
+        <section id="informacion">
+            <h2>Información del Parque</h2>
+            <p>En nuestro parque encontrarás una amplia variedad de animales en semilibertad...</p>
+            <img src="animal1.jpg" alt="Animal 1" class="animacion1">
+            <img src="animal2.jpg" alt="Animal 2" class="animacion2">
+            <img src="animal3.jpg" alt="Animal 3" class="animacion3">
+            <img src="animal4.jpg" alt="Animal 4" class="animacion4">
+        </section>
+
+        <section id="actividades">
+            <h2>Actividades</h2>
+            <p>Disfruta de visitas guiadas, rutas de senderismo y mucho más...</p>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Parque de la Naturaleza</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+        </ul>
+        <a href="#header">Volver arriba</a>
+    </footer>
+</body>
+</html>

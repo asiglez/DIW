@@ -1,0 +1,154 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf6ff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #ffc15e, #ff7e5f, #b93df7);
+    animation: colorChange 10s infinite;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Cielo con nubes */
+.cielo {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: lightblue;
+    overflow: hidden;
+}
+
+.nube {
+    position: absolute;
+    width: 100px;
+    opacity: 0.8;
+}
+
+.nube1 {
+    top: 30px;
+    left: -150px;
+    animation: moverNube 15s infinite linear;
+}
+
+.nube2 {
+    top: 80px;
+    left: -200px;
+    animation: moverNube 18s infinite linear 5s;
+}
+
+/* Animaciones */
+.animacion1 {
+    animation: crecer 3s infinite;
+}
+
+.animacion2 {
+    animation: aparecerDesaparecer 2s infinite;
+}
+
+.animacion3 {
+    animation: rotar 3s infinite;
+}
+
+.animacion4 {
+    animation: cambiarBorde 4s infinite;
+}
+
+/* Efecto typing */
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 4s steps(30) infinite, blink 0.8s infinite;
+}
+
+/* Keyframes */
+@keyframes colorChange {
+    0% { background: #ff7eb3; }
+    25% { background: #ff758c; }
+    50% { background: #ffc15e; }
+    75% { background: #ff7e5f; }
+    100% { background: #b93df7; }
+}
+
+@keyframes crecer {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes aparecerDesaparecer {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes rotar {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+}
+
+@keyframes cambiarBorde {
+    0%, 100% { border-radius: 50%; }
+    50% { border-radius: 0; }
+}
+
+/* Animación de typing */
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Animación de las nubes */
+@keyframes moverNube {
+    0% { left: -150px; }
+    100% { left: 100%; }
+}
+
+/* Pie de página */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer form {
+    margin: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
