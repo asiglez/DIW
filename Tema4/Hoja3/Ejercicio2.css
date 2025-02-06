@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.articulo {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+}
+.contenido {
+    text-align: left;
+}
+
+.texto-completo {
+    display: none;
+}
+
+.botones {
+    display: none;
+    margin-top: 10px;
+}
+
+.botones button {
+    margin-right: 5px;
+}
